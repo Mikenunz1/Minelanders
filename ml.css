@@ -1,21 +1,29 @@
 .navDiv {
-    background-color: orange; 
+    background-color: #0d171f;
     margin: auto; 
-    width: 30%; 
-    display: flex; 
-    max-width: 550px; 
-    min-width: 300px;
+    width: 40%; 
+    max-width: 750px; 
+    min-width: 400px;
 }
 
 .navButtonsDiv {
-    margin: auto;
+    display: flex;
+    /*margin: auto;*/
 }
 
 .navButtonsDiv a {
     text-align: center;
     font-size: large;
-    background-color: #8a2be2;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #0d171f;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto;
+    transition: background-color 0.2s;
+}
+
+.navButtonsDiv a:hover {
+    background-color: #152431;
 }
