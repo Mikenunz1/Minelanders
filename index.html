@@ -14,6 +14,8 @@
     </head>
     <body style="background-color: deepskyblue;">
         <!-- Header stylized to look like Minecraft grassblocks-->
+                         <div><img width="200" src="Logo.jpg"/></div>
+                <div style="background-color: burlywood;"> <h1>MINELANDERS</h1></div>
         <header></header>
 
         <!-- Addtional div underneath grass to act as dirt, fading to black-->
@@ -31,24 +33,58 @@
             </div>
         </div>
 
-        <!-- Primary content div where most of the home page's content lies-->
+        <!-- Primary div where all the content lies, split up into 2 sidebars and a main section -->
         <div style="display: flex; margin-left: -10px; margin-right: -10px;">
 
-            <!-- 10 80 10 split of divs where the 10% divs are sidebars and the 80% is where content actually is-->
-            <div style="background-color: #0d171f; width: 5%"></div>
-            <div style="background-image: url(Stone2.png); background-size: 100px; width: 5%;"></div>
-            <div style="background-size: 100px; background-image: url(Stone.png); width: 80%;">
-                <div style="background-color: blueviolet">Logo Here</div>
-                <div style="background-color: burlywood;"> Title</div>
-                <div style="display: flex;"><div style="margin: auto;"><video src="trailer.mp4" controls autoplay width="1280" height="720"></div></div>
+            <!-- Left sidebar -->
+            <div class="solidSidebar"></div>
+
+            <!-- Main Content Div -->
+            <div style="width: 90%; display: flex;">
+
+                <!-- Top Visual bar -->
+                <div style="width: 100%; height:96px; display: flex;">
+
+                    <div style="background-size: contain; width: 96px; background-image: url(Images/FSTLeft.png);">tes</div>
+                    <div style="background-size: contain; width: 90%; background-image: url(Images/FSUp.png);"">tes</div>
+                    <div style="background-size: contain; width: 96px; background-image: url(Images/FSTRight.png);">tes</div>
+
+                </div>
+
+                <!-- Main Content Div -->
+                <div>
+                    <div style="width: 96px; background-image: url(Images/FSLeft.png);"></div>
+                    <img src="Logo.jpg"/>
+                    <div style="width: 96px; background-image: url(Images/FSRight.png);"></div>
+                </div>
+
+                <!-- Bottom Visual Bar -->
+                <div></div>
+
+                <!--
+                <div style="background-size: 100%; width: 5%; background-image: url(Images/FSLeft.png);"></div>
+                <img src="Logo.jpg">
+                <div style="background-size: 100%; width: 5%; background-image: url(Images/FSRight.png);"></div>
+                -->
+
+            </div>
+
+            <!--
+            <div style="background-size: 100%; width: 5%; background-image: url(FSLeft.png);"></div>
+            <div style="background-size: 6%; width: 80%; background-image: url(Stone.png);">
+                <div style="background-size: 100px, auto; background-image: url(FSUp.png); height: 100px;"></div>
+                <div style="display: flex;"><div style="margin: auto; box-shadow: 10px 10px 20px black;"><video src="trailer.mp4" controls autoplay width="1280" height="720"></div></div>
                 <div style="background-color: orange;">Play Now</div>
             </div>
-            <div style="background-image: url(Stone2.png); background-size: 100px; width: 5%;"></div>
-            <div style="background-color: #0d171f; width: 5%"></div>
+            <div style="background-size: 100%; width: 5%; background-image: url(FSRight.png);"></div>
+
+             -->
+
+            <!-- Right sidebar -->
+            <div class="solidSidebar"></div>
 
         </div>
-        <footer style="background-color: #0d171f;">
-            <p>Hello!</p>
+        <footer style="background-color: #0d171f; margin: -10px; height: 50px;">
         </footer>
     </body>
 </html>
