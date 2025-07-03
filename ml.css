@@ -48,6 +48,12 @@ header {
 
 /* This Section is for visual structure of pages */
 .solidSidebar {
-    background-color: #0d171f; 
+    background-color: #0d171f;  
     width: 5%;
+}
+
+.pageButton {
+    padding: 10px;
+    width: 100px;
+    background-color: aqua;
 }
