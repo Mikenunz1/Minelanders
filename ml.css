@@ -91,12 +91,12 @@ header div {
 }
 
 /* This Section is for all navigation bar content */
-/* Wrapper div for the navidational buttons div, makes sure they */
+/* Wrapper div for the buttons to make sure they appear side by side */
 .navButtonsDiv {
     display: flex;
 }
 
-
+/* Div that ensures the buttons are close enough and resize correctly*/
 .navDiv {
     background-color: #0d171f;
     margin: auto; 
@@ -105,6 +105,7 @@ header div {
     min-width: 400px;
 }
 
+/* class for individual navigational button */
 .navButtonsDiv a {
     text-align: center;
     font-size: 2em;
@@ -118,6 +119,7 @@ header div {
     transition: 0.2s;
 }
 
+/* class for individual navigational button hover */
 .navButtonsDiv a:hover {
     background-color: #152431;
     color: white;
@@ -126,10 +128,14 @@ header div {
 }
 
 /* This Section is for visual structure of pages */
+/* Largest wrapper div which contains everything below the navigational bar*/
 .primaryContent {
-
+    display: flex; 
+    margin-left: -10px; 
+    margin-right: -10px;
 }
 
+/* Solid black bar on either side of the main content which grows as the webpage shrinks and grows*/
 .solidSidebar {
     background-color: #0d171f;  
     width: 5%;
