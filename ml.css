@@ -17,6 +17,63 @@
 }
 */
 
+body {
+    background-color: #0d171f;
+}
+
+header {
+    margin: -10px; 
+    margin-bottom: -25px; 
+    background-color: deepskyblue;
+}
+
+header div {
+    display: flex; 
+    margin-bottom:  0px;
+}
+
+/* These three classes are used to format the flowers on either side of the logo and title */
+.flowerLeft {
+    margin: auto; 
+    margin-right: 0;
+}
+
+.flowerMiddle {
+    margin: auto; 
+    margin-right: 0; 
+    margin-left: 0;
+}
+
+.flowerRight {
+    margin: auto; 
+    margin-left: 0;
+}
+
+/* These classes are used to format the logo on either side of the title */
+.logoLeft {
+    margin: auto; 
+    margin-right: 0px; 
+    margin-left: 20px;
+}
+
+.logoRight {
+    margin: auto; 
+    margin-right: 20px; 
+    margin-left: 0px;
+}
+
+/* The title class is used to style the title text for the header "The 'Minelanders" */
+.title {
+    font-family: 'Mikecraft'; 
+    font-size: 40px; 
+    margin: auto; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    color: white; 
+    text-shadow:black 10px 10px;
+}
+
+/* dirtDiv and grassDiv are two visual divs that help create the minecraft block illusion */
 .dirtDiv {
     height: 100px; 
     background-image: url('Dirt.png'); 
@@ -34,17 +91,18 @@
 }
 
 /* This Section is for all navigation bar content */
+/* Wrapper div for the navidational buttons div, makes sure they */
+.navButtonsDiv {
+    display: flex;
+}
+
+
 .navDiv {
     background-color: #0d171f;
     margin: auto; 
     width: 40%; 
     max-width: 750px; 
     min-width: 400px;
-}
-
-.navButtonsDiv {
-    display: flex;
-    /*margin: auto;*/
 }
 
 .navButtonsDiv a {
@@ -68,6 +126,10 @@
 }
 
 /* This Section is for visual structure of pages */
+.primaryContent {
+
+}
+
 .solidSidebar {
     background-color: #0d171f;  
     width: 5%;
