@@ -3,20 +3,6 @@
     src: url(mikecraft.ttf);
 }
 
-/*
-@media (min-width: 1900px) {
-    body {
-        background-color: skyblue;
-    }
-}
-
-@media (max-width: 1800px) {
-    body {
-        background-color: green;
-    }
-}
-*/
-
 body {
     background-color: #0d171f;
 }
@@ -66,6 +52,7 @@ header div {
 .title {
     font-family: 'Mikecraft'; 
     font-size: 40px; 
+    text-align: center;
     margin: auto; 
     margin-left: 10px; 
     margin-right: 10px; 
@@ -129,25 +116,92 @@ header div {
 
 /* This Section is for visual structure of pages */
 /* Largest wrapper div which contains everything below the navigational bar*/
-.primaryContent {
+.primaryContentWrapper {
     display: flex; 
     margin-left: -10px; 
     margin-right: -10px;
 }
 
+.content {
+    min-width: 1900px;
+}
+
 /* Solid black bar on either side of the main content which grows as the webpage shrinks and grows*/
 .solidSidebar {
     background-color: #0d171f;  
-    width: 5%;
     flex-grow: 2;
 }
 
+/* Wrapper for the stone bars that lay horitzontally above and below the main content */
+.visualBar {
+    width: 100%; 
+    height:96px; 
+    display: flex;
+}
+
+/* Formats the corners of the stone bars*/
 .stoneCorner {
     background-size: contain; 
     width: 96px; 
     background-repeat: no-repeat;
 }
 
+/* Formats the stone bar*/
+.stoneBar {
+    background-size: contain;
+    width: 96px;
+    flex-grow: 2;
+}
+
+.stoneColumn {
+    background-size: contain; 
+    width: 96px;
+}
+
+.stoneBacking {
+    background-image: url(Images/Stone.png); 
+    flex-grow: 3; 
+    background-size: 96px;
+}
+
+/* Just a class for applying the flex property */
+.flexWrapper {
+    display: flex;
+}
+
+/* Classes for content related to the "footer" div which is meant to represent the footer */
+.footerDiv {
+    background-color: #0d171f;
+    width: 60%;
+}
+
+.footerContent {
+    width: 50%; 
+    margin-left: 20px;
+}
+
+.footerContent h3 {
+    color: rgb(165, 158, 175); 
+    font-family: 'Mikecraft';
+}
+
+.footerContent p {
+    color: #a59eaf; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+video {
+    max-width: 1080px; 
+    width: 90%; 
+    margin: auto; 
+    box-shadow: 0px 0px 30px 10px rgb(0, 0, 0); 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+/* classes for the PLAY NOW button */
 .pageButton {
     display: flex;
     margin: auto;
@@ -174,4 +228,132 @@ header div {
 .pageButton a:hover {
     background-color: rgb(41, 146, 59);
     transition: 0.2s;
+}
+
+@media (max-width: 1800px) {
+
+    .title {
+        font-size: 25px;
+        text-shadow:black 5px 5px;
+        text-align: left;
+    }
+
+    .flowerLeft {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .flowerMiddle {
+        visibility: hidden;
+        width: 0;
+    }
+    
+    .flowerRight {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .logoLeft img, .logoRight img {
+        width: 80px;
+    }
+
+    .navDiv {
+        width: auto;
+    }
+
+    .dirtDiv, .grassDiv {
+        background-size: 60px;
+        height: 60px;
+    }
+
+    .stoneCorner, .stoneColumn, .stoneBacking {
+        width: 60px;
+        background-size: 60px;
+    }
+
+    .stoneBar {
+        height: 60px;
+    }
+
+    video {
+        width: 90%;
+    }
+
+    .content {
+        min-width: 400px;
+    }
+
+    .pageButton {
+        width: 300px;
+    }
+
+    .pageButton a {
+        font-size: 15px;
+        border-width: 4px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .visualBar {
+        height: auto;
+    }
+
+    .footerDiv {
+        width: auto;
+    }
+
+    .footerContent {
+        margin-top: 100px;
+    }
+
+    .footerDiv h3, .footerDiv p {
+        margin-bottom: 20px;
+        font-size:  12px;
+    }
+
+    .footerContent {
+        width: 50%
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .title {
+        font-size: 15px;
+        text-shadow:black 5px 5px;
+        text-align: left;
+    }
+
+    .navButtonsDiv {
+        display: list-item;
+    }
+
+    .navButtonsDiv a {
+        display: list-item;
+        font-size: 15px;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style-type: none;
+    }
+
+    .navButtonsDiv a:hover {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    video {
+        width: 280px;
+    }
+
+    .logoRight img {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .footerContent {
+        width: auto;
+    }
+    
 }

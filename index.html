@@ -41,58 +41,64 @@
         </div>
 
         <!-- Primary div where all the content lies, split up into 2 sidebars and a main section -->
-        <div style="display: flex; margin-left: -10px; margin-right: -10px;">
+        <div class="primaryContentWrapper">
 
             <!-- Left sidebar -->
             <div class="solidSidebar"></div>
 
             <!-- Main Content Div -->
-            <div style="min-width: 1900px">
+            <div class="content">
 
                 <!-- Top Visual bar -->
-                <div style="width: 100%; height:96px; display: flex;">
+                <div class="visualBar">
 
                     <div class="stoneCorner" style=" background-image: url(Images/TLStone.png);"></div>
-                    <div style="background-size: contain; width: 96px; background-image: url(Images/FUStone.png); flex-grow: 2;"></div>
+                    <div class="stoneBar" style="background-image: url(Images/FUStone.png);"></div>
                     <div class="stoneCorner" style=" background-image: url(Images/TRStone.png);"></div>
 
                 </div>
 
                 <!-- Main Content Div -->
-                <div style="display: flex;">
-                    <div style="background-size: contain; width: 96px; background-repeat: repeat-y; background-image: url(Images/LStone.png);"></div>
-                    <div style="background-image: url(Images/Stone.png); flex-grow: 3; background-size: 96px;">
-                        <div style="display: flex;"><video controls style=" max-width: 1080px; width: 90%; margin: auto; box-shadow: 0px 0px 30px 10px rgb(0, 0, 0); margin-top: 40px; margin-bottom: 40px;" src="trailer.mp4"/></div>
+                <div class="flexWrapper">
+
+                    <!-- Top visual bar -->
+                    <div class="stoneColumn" style="background-image: url(Images/LStone.png);"></div>
+
+                    <!-- Main content elements go here -->
+                    <div class="stoneBacking">
+                        <div class="flexWrapper"><video controls src="trailer.mp4"/></div>
                         <div class="pageButton"><a href="about.html">PLAY NOW</a></div>
                     </div>
-                    <div style="background-size: contain; width: 96px; background-image: url(Images/RStone.png);"></div>
+
+                    <!-- Bottom Visual Bar -->
+                    <div class="stoneColumn" style="background-image: url(Images/RStone.png);"></div>
                 </div>
 
                 <!-- Bottom Visual Bar -->
-                <div style="width: 100%; height:96px; display: flex;">
+                <div class="visualBar">
 
                     <div class="stoneCorner" style="background-image: url(Images/BLStone.png);"></div>
-                    <div style="background-size: contain; width: 96px; background-image: url(Images/FDStone.png); flex-grow: 2;"></div>
+                    <div class="stoneBar" style="background-image: url(Images/FDStone.png);"></div>
                     <div class="stoneCorner" style="background-image: url(Images/BRStone.png);"></div>
 
                 </div>
                 
-                <div style="display: flex;">
-                <div style="background-color: #0d171f; flex-grow: 2;"></div>
-                <div style="background-color: #0d171f; width: 60%;">
-                    <div style="width: 50%; margin-left: 20px;">
-                        <h3 style="color: rgb(165, 158, 175); font-family: 'Mikecraft';">2019 - 2025 THE 'MINELANDERS</h3>
-                        <p style="color: #a59eaf; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-top: -15px; margin-bottom: 15px;">The 'Minelanders 
-                            is a multiplayer server and network for Minecraft Java + Bedrock Edition. The 'Minelanders is not endorsed by Mojang, AB and is not an official 
-                            Minecraft service or associated with Mojang
-                        </p>
-                        <a href="https://www.youtube.com/@CraftingNewsNetwork"><img width="30px" src="Images/YoutubeIcon.png" /></a>
-                        <a href="https://www.tiktok.com/@minelanders"><img width="30px" src="Images/TikTokIcon.png"/></a>
-                        <a href="https://discord.com/invite/axPxbkt"><img width="30px" style="margin-right: 5px;" src="Images/DiscordIcon.png"/></a>
-                        <a href="mailto:shanman150@gmail.com>"><img width="30px" src="Images/EmailIcon.png"/></a>
+                <div class="flexWrapper">
+                    <div class="solidSidebar"></div>
+                    <div class="footerDiv">
+                        <div class="footerContent">
+                            <h3>2019 - 2025 THE 'MINELANDERS</h3>
+                            <p>The 'Minelanders 
+                                is a multiplayer server and network for Minecraft Java + Bedrock Edition. The 'Minelanders is not endorsed by Mojang, AB and is not an official 
+                                Minecraft service or associated with Mojang
+                            </p>
+                            <a href="https://www.youtube.com/@CraftingNewsNetwork"><img width="30px" src="Images/YoutubeIcon.png" /></a>
+                            <a href="https://www.tiktok.com/@minelanders"><img width="30px" src="Images/TikTokIcon.png"/></a>
+                            <a href="https://discord.com/invite/axPxbkt"><img width="30px" style="margin-right: 5px;" src="Images/DiscordIcon.png"/></a>
+                            <a href="mailto:shanman150@gmail.com>"><img width="30px" src="Images/EmailIcon.png"/></a>
+                        </div>
                     </div>
-                </div>
-                <div style="background-color: #0d171f; flex-grow: 2;"></div>
+                    <div class="solidSidebar"></div>
                 </div>
 
             </div>
