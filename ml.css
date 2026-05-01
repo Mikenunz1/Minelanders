@@ -51,14 +51,23 @@ header div {
 /* The title class is used to style the title text for the header "The 'Minelanders" */
 .title {
     font-family: 'Mikecraft'; 
-    font-size: 40px; 
     text-align: center;
     margin: auto; 
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px; 
     color: white; 
-    text-shadow:black 10px 10px;
+    font-size: 25px;
+    text-shadow:black 5px 5px;
 }
+
+.descHeading {
+    font-family: 'Mikecraft';
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 
 /* dirtDiv and grassDiv are two visual divs that help create the minecraft block illusion */
 .dirtDiv {
@@ -89,7 +98,7 @@ header div {
     margin: auto; 
     width: 40%; 
     max-width: 750px; 
-    min-width: 400px;
+    min-width: 300px;
 }
 
 /* class for individual navigational button */
@@ -204,13 +213,14 @@ video {
 /* classes for the PLAY NOW button */
 .pageButton {
     display: flex;
+    width: 300px;
     margin: auto;
-    width: 28%;
 }
 
 .pageButton a{
     font-family: 'Mikecraft';
     font-size: 40px;
+    text-align: center;
     padding: 15px;
     padding-left: 50px;
     padding-right: 50px;
@@ -222,7 +232,6 @@ video {
     border-width: 6px;
     border-color: black;
     text-shadow: black 0px 5px;
-    margin-bottom: 45px;
 }
 
 .pageButton a:hover {
@@ -231,12 +240,6 @@ video {
 }
 
 @media (max-width: 1800px) {
-
-    .title {
-        font-size: 25px;
-        text-shadow:black 5px 5px;
-        text-align: left;
-    }
 
     .flowerLeft {
         visibility: hidden;
@@ -255,10 +258,6 @@ video {
 
     .logoLeft img, .logoRight img {
         width: 80px;
-    }
-
-    .navDiv {
-        width: auto;
     }
 
     .dirtDiv, .grassDiv {
@@ -281,10 +280,6 @@ video {
 
     .content {
         min-width: 400px;
-    }
-
-    .pageButton {
-        width: 300px;
     }
 
     .pageButton a {
@@ -321,12 +316,20 @@ video {
 
     .title {
         font-size: 15px;
-        text-shadow:black 5px 5px;
-        text-align: left;
     }
+
+    .descHeading {
+        font-size: 14px;
+    }   
 
     .navButtonsDiv {
         display: list-item;
+    }
+
+    .pageButton {
+        width: 250px;
+        font-size: 12px;
+        margin: unset;
     }
 
     .navButtonsDiv a {
@@ -347,7 +350,7 @@ video {
         width: 90%;
     }
 
-    .logoRight img {
+    .logoRight img, .logoLeft img {
         visibility: hidden;
         width: 0px;
     }
@@ -357,6 +360,8 @@ video {
     }
     
 }
+
+/*The bellow section needs to be refactored into a the prexisiting media sections*/
 .descriptionSection {
     padding: 20px 30px;
 }
@@ -438,11 +443,4 @@ video {
     .descCTA p {
         font-size: 14px;
     }
-}
-.descHeading {
-    font-family: 'Mikecraft';
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
 }
